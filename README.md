@@ -157,6 +157,10 @@ the generated dataset will be stored in `logs/images/NAME_OF_EXPERIMENT`
 ### Domain segmentation stage
 Create a symlink in `data` which points to the generated dataset stored in `logs/images/NAME_OF_EXPERIMENT`.
 
+```
+ln -s /path/to/logs/images/NAME_OF_EXPERIMENT /path/to/data/NAME_OF_EXPERIMENT
+```
+
 To train **DAFormer+DATUM** on *GTA→Cityscapes* with the MiT-B5 encoder, please use the following command :
 
 ```shell
